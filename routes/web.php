@@ -28,4 +28,6 @@ Route::middleware([
 
     // This is our new line
     Route::resource('tasks', \App\Http\Controllers\TaskController::class);
+    Route::resource('roles', \App\Http\Controllers\RoleController::class);
+    Route::resource('permissions', \App\Http\Controllers\PermissionController::class);
 });
