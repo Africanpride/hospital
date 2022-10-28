@@ -25,4 +25,7 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
+
+    // This is our new line
+    Route::resource('tasks', \App\Http\Controllers\TaskController::class);
 });
