@@ -13,7 +13,7 @@
                 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
 
 
-                    @can('manage roles')
+                    @can('manage tasks')
                     <x-link href="{{ route('roles.create') }}" class="m-4">Add New Role</x-link>
                     @endcan
 
